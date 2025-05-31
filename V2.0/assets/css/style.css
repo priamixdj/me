@@ -28,7 +28,7 @@ html {
     background: linear-gradient(rgba(17, 0, 67, 0.852),rgba(20, 0, 38, 0.884)) no-repeat;
 
     width: auto;
-    height: 100vh;
+    height: auto;
 
     padding: 0 var(--padding);
 }
@@ -96,7 +96,7 @@ a:hover {
     display: flex;
     flex-direction: row;
 
-    height: 400px;
+    height: auto;
 }
     .hero div {
         max-width: 50%;
@@ -144,4 +144,9 @@ a:hover {
 
     margin: 60px;
     margin-left: 0;
+}
+
+
+@media (max-width: 986px) {
+    
 }
