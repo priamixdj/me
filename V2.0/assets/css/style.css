@@ -101,7 +101,7 @@ a:hover {
     display: flex;
     flex-direction: row;
 
-    height: auto;
+    height: 600px;
 }
     .hero div {
         max-width: 50%;
