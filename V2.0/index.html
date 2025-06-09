@@ -1,5 +1,3 @@
-
-
 <html lang="it">
     <head>
         <title>portfolio priamix</title>
@@ -10,17 +8,24 @@
         <meta name="vewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="assets/css/style.css">
+
+        
     </head>
     
     <header class="">
         <img id="logo" src="assets/img/logo.png" alt="logo">
-
+        
         <nav class="center">
-            <li><a href="">Home</a></li>
-            <li><a href="">Lavori</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#competenze">Competenze</a></li>
             <li><a href="">Riguardo</a></li>
             <li><a href="">Contattami</a></li>
         </nav>
+        
+        <div class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>         
+        </div>
 
         <!-- possibilità di cambiare tema -->
          <!-- e anche multilingua -->
@@ -33,9 +38,9 @@
                 <h1 class="">Matteo</h1>
                 <h1>Priamix</h1>
 
-                <p>web developer, web designer, music producer</p>
+                <p>sviluppatore web, designer web, produttore musicale</p>
             </div>
-
+            
             <div id="hero-image" class="center">
                 <div class="circle">
                     <img src="assets/img/profilo.png" alt="">
@@ -44,9 +49,9 @@
             </div>
         </section>
 
-        <section class="competenze center">
+        <section id="competenze" class="competenze center">
             <div class="card">
-                <h2><a href="">HTML CSS JS</a></h2>
+                <h2>HTML CSS JS</h2>
 
                 <a href="">
                     <svg width="100px" height="100px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_html</title><polygon points="5.902 27.201 3.655 2 28.345 2 26.095 27.197 15.985 30 5.902 27.201" style="fill:#e44f26"/><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#f1662a"/><polygon points="16 13.407 11.91 13.407 11.628 10.242 16 10.242 16 7.151 15.989 7.151 8.25 7.151 8.324 7.981 9.083 16.498 16 16.498 16 13.407" style="fill:#ebebeb"/><polygon points="16 21.434 15.986 21.438 12.544 20.509 12.324 18.044 10.651 18.044 9.221 18.044 9.654 22.896 15.986 24.654 16 24.65 16 21.434" style="fill:#ebebeb"/><polygon points="15.989 13.407 15.989 16.498 19.795 16.498 19.437 20.507 15.989 21.437 15.989 24.653 22.326 22.896 22.372 22.374 23.098 14.237 23.174 13.407 22.341 13.407 15.989 13.407" style="fill:#fff"/><polygon points="15.989 7.151 15.989 9.071 15.989 10.235 15.989 10.242 23.445 10.242 23.445 10.242 23.455 10.242 23.517 9.548 23.658 7.981 23.732 7.151 15.989 7.151" style="fill:#fff"/></svg>
@@ -54,7 +59,7 @@
                 
             </div>  
             <div class="card">
-                <h2><a href="">C/C++</a></h2>
+                <h2>C/C++</h2>
 
                 <a href="index.html">
                     <svg width="100px" height="100px" viewBox="-16 0 288 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
@@ -68,8 +73,8 @@
                 
             </div>
 
-            <div class="card" href="index.html">
-                <h2><a href="">JAVA</a></h2>
+            <div class="card">
+                <h2>JAVA</h2>
 
                 <a href="index.html">
                     <svg width="100px" height="100px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> 
@@ -81,10 +86,77 @@
                 </a>
                 
             </div>
+
+            <h2 style="width: 100%; margin-top: 40px; opacity: 60%;">competenze aggiuntive</h1>
+            <div class="compAggiuntive center">
+                <div class="card c-com">
+                    <h2>Unity 2D</h2>
+                        <img src="assets/img/icons8-unity.svg" alt="">
+                </div>
+                
+                <div class="card c-com">
+                    <h2>AUTOCAD 2D</h2>
+                        <img src="assets/img/autodesk-svgrepo-com.svg" alt="">
+                </div>
+    
+                <div class="card c-com">
+                    <h2>C# base</h2>
+                        <img src="assets/img/icons8-c-sharp-logo.svg" alt="">
+                </div>
+    
+                <div class="card c-com">
+                    <h2>Google sheets</h2>
+                        <img src="assets/img/icons8-google-sheets.svg" alt="">
+                </div>
+    
+                <div class="card c-com">
+                    <h2>Google Forms</h2>
+    
+                        <img src="assets/img/icons8-google-forms.svg" alt="">
+                </div>
+    
+    
+                <div class="card c-com">
+                    <h2>Google Slides</h2>
+    
+                        <img src="assets/img/icons8-google-slides.svg" alt="">
+                </div>
+                
+                <div class="card c-com">
+                    <h2>Canva</h2>
+    
+                        <img src="assets/img/icons8-canva.svg" alt="">
+                </div>
+            </div>           
+
+        </section>
+
+        <section class="riguardo">
+            <h1>Riguardo me</h1>
+                <br>
+                <p>
+                    Matteo è uno studente tecnico informatico di Piove di Sacco con una passione sconfinata per la programmazione in tutte le sue sfaccettature. Con un occhio attento alle innovazioni e un approccio sempre orientato alla crescita, si dedica alla creazione di esperienze web coinvolgenti, combinando abilmente design e sviluppo frontend con integrazioni backend versatili. La sua sete di conoscenza lo porta a esplorare costantemente nuove tecnologie, affinando le proprie competenze in linguaggi come HTML, CSS, JavaScript, oltre a cimentarsi in C/C++, Java e C#.
+
+                    <br><br>
+                    Matteo, oltre alla passione della programmazione, è anche un produttore musicale, capace di dare forma al suono con la stessa precisione con cui struttura un'interfaccia digitale. L’equilibrio tra creatività visiva e sonorità gli permette di fondere design e sound in esperienze uniche, trasformando ogni progetto in qualcosa di immersivo e interattivo. Dal codice al ritmo, Matteo è sempre alla ricerca di nuovi stimoli, innovando con energia e determinazione. 🚀🎧
+                </p>
         </section>
         
-        <section class="contattami">
+        <section class="contattami center">
+            <form action="" id="form">
+                <label for="">Nome: *</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required> 
 
+                <label for="">Email: *</label>
+                <input type="text" id="email" name="email" placeholder="Inserisci la tua mail" required> 
+
+                <label for="">Messaggio: </label>
+                <textarea type="" id="nome" name="nome" placeholder="Inserisci il tuo messaggio"> </textarea>    
+                
+                
+                <input type="submit" value="Invia" id="submit" onclick="sendForm()">
+            
+            </form>
         </section>
 
 
