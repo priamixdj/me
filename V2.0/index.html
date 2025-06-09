@@ -88,44 +88,44 @@
             </div>
 
             <h2 style="width: 100%; margin-top: 40px; opacity: 60%;">competenze aggiuntive</h1>
-            <div class="compAggiuntive center">
+            <div class="compAggiuntive center" id="cards">
                 <div class="card c-com">
                     <h2>Unity 2D</h2>
-                        <img src="assets/img/icons8-unity.svg" alt="">
+                        <img src="assets/img/icon/icons8-unity.svg" alt="">
                 </div>
                 
                 <div class="card c-com">
                     <h2>AUTOCAD 2D</h2>
-                        <img src="assets/img/autodesk-svgrepo-com.svg" alt="">
+                        <img src="assets/img/icon/autodesk-svgrepo-com.svg" alt="">
                 </div>
     
                 <div class="card c-com">
                     <h2>C# base</h2>
-                        <img src="assets/img/icons8-c-sharp-logo.svg" alt="">
+                        <img src="assets/img/icon/icons8-c-sharp-logo.svg" alt="">
                 </div>
     
                 <div class="card c-com">
                     <h2>Google sheets</h2>
-                        <img src="assets/img/icons8-google-sheets.svg" alt="">
+                        <img src="assets/img/icon/icons8-google-sheets.svg" alt="">
                 </div>
     
                 <div class="card c-com">
                     <h2>Google Forms</h2>
     
-                        <img src="assets/img/icons8-google-forms.svg" alt="">
+                        <img src="assets/img/icon/icons8-google-forms.svg" alt="">
                 </div>
     
     
                 <div class="card c-com">
                     <h2>Google Slides</h2>
     
-                        <img src="assets/img/icons8-google-slides.svg" alt="">
+                        <img src="assets/img/icon/icons8-google-slides.svg" alt="">
                 </div>
                 
                 <div class="card c-com">
                     <h2>Canva</h2>
     
-                        <img src="assets/img/icons8-canva.svg" alt="">
+                        <img src="assets/img/icon/icons8-canva.svg" alt="">
                 </div>
             </div>           
 
@@ -133,17 +133,19 @@
 
         <section class="riguardo">
             <h1>Riguardo me</h1>
-                <br>
-                <p>
-                    Matteo è uno studente tecnico informatico di Piove di Sacco con una passione sconfinata per la programmazione in tutte le sue sfaccettature. Con un occhio attento alle innovazioni e un approccio sempre orientato alla crescita, si dedica alla creazione di esperienze web coinvolgenti, combinando abilmente design e sviluppo frontend con integrazioni backend versatili. La sua sete di conoscenza lo porta a esplorare costantemente nuove tecnologie, affinando le proprie competenze in linguaggi come HTML, CSS, JavaScript, oltre a cimentarsi in C/C++, Java e C#.
+            <br>
+            <p>
+                Matteo è uno studente tecnico informatico di Piove di Sacco con una passione sconfinata per la programmazione in tutte le sue sfaccettature. Con un occhio attento alle innovazioni e un approccio sempre orientato alla crescita, si dedica alla creazione di esperienze web coinvolgenti, combinando abilmente design e sviluppo frontend con integrazioni backend versatili. La sua sete di conoscenza lo porta a esplorare costantemente nuove tecnologie, affinando le proprie competenze in linguaggi come HTML, CSS, JavaScript, oltre a cimentarsi in C/C++, Java e C#.
 
-                    <br><br>
-                    Matteo, oltre alla passione della programmazione, è anche un produttore musicale, capace di dare forma al suono con la stessa precisione con cui struttura un'interfaccia digitale. L’equilibrio tra creatività visiva e sonorità gli permette di fondere design e sound in esperienze uniche, trasformando ogni progetto in qualcosa di immersivo e interattivo. Dal codice al ritmo, Matteo è sempre alla ricerca di nuovi stimoli, innovando con energia e determinazione. 🚀🎧
-                </p>
+                <br><br>
+                Matteo, oltre alla passione della programmazione, è anche un produttore musicale, capace di dare forma al suono con la stessa precisione con cui struttura un'interfaccia digitale. L’equilibrio tra creatività visiva e sonorità gli permette di fondere design e sound in esperienze uniche, trasformando ogni progetto in qualcosa di immersivo e interattivo. Dal codice al ritmo, Matteo è sempre alla ricerca di nuovi stimoli, innovando con energia e determinazione. 🚀🎧
+            </p>
         </section>
         
-        <section class="contattami center">
-            <form action="" id="form">
+        
+        <section class="contattami">
+            <h1>Contattami</h1>
+            <form action="" id="form" class="center">
                 <label for="">Nome: *</label>
                 <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required> 
 
@@ -154,7 +156,7 @@
                 <textarea type="" id="nome" name="nome" placeholder="Inserisci il tuo messaggio"> </textarea>    
                 
                 
-                <input type="submit" value="Invia" id="submit" onclick="sendForm()">
+                <input type="submit" value="Invia" id="submit" onclick="sendForm()" style="cursor: pointer;">
             
             </form>
         </section>
