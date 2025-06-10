@@ -5,7 +5,7 @@
     --mini-padding: 10px;
 
     --text-light-blue: rgb(96, 199, 255);
-    --dark-blue: rgba(0, 0, 56, 0.623);
+    --dark-blue: rgb(21, 21, 88);
 }
 *{
     /* border: solid red 2px; */
@@ -190,7 +190,7 @@ a:hover {
 .card {
     /* border: solid red 2px; */
 
-    background-color: var(--dark-blue);
+    background-color: rgba(74, 85, 181, 0.127);
     box-shadow: 0px 0px 80px #000a9721;
 
     height: 150px;
@@ -301,13 +301,13 @@ form input, form textarea {
     margin: 20px;
 
     border-radius: 10px;
-    border: none;
 
     background-color: transparent;
-    border: solid var(--text-light-blue) 2px;
+    border: solid white 1px;
+    border-bottom: solid var(--text-light-blue) 1px;
     color: var(--white);
 
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.16);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.038);
     
     /* border: solid red 2px; */
 }
@@ -316,6 +316,13 @@ form input, form textarea {
 form textarea{ 
     min-height: 150px;
     resize: none;
+}
+
+form .button {
+    background-color: rgba(108, 108, 255, 0.208);
+    color: white;
+    box-shadow: none;
+    border: none;
 }
 
 

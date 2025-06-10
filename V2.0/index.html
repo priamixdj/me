@@ -18,8 +18,8 @@
         <nav class="center">
             <li><a href="#">Home</a></li>
             <li><a href="#competenze">Competenze</a></li>
-            <li><a href="">Riguardo</a></li>
-            <li><a href="">Contattami</a></li>
+            <li><a href="#riguardo">Riguardo</a></li>
+            <li><a href="#contattami">Contattami</a></li>
         </nav>
         
         <div class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">
@@ -131,19 +131,21 @@
 
         </section>
 
-        <section class="riguardo">
+        <section class="riguardo" id="riguardo">
             <h1>Riguardo me</h1>
             <br>
             <p>
-                Matteo è uno studente tecnico informatico di Piove di Sacco con una passione sconfinata per la programmazione in tutte le sue sfaccettature. Con un occhio attento alle innovazioni e un approccio sempre orientato alla crescita, si dedica alla creazione di esperienze web coinvolgenti, combinando abilmente design e sviluppo frontend con integrazioni backend versatili. La sua sete di conoscenza lo porta a esplorare costantemente nuove tecnologie, affinando le proprie competenze in linguaggi come HTML, CSS, JavaScript, oltre a cimentarsi in C/C++, Java e C#.
-
+                💻 Matteo è uno studente tecnico informatico di Piove di Sacco(PD) con una passione per la programmazione e il design di siti web.
+                Ha iniziato a programmare all' età di 15 anni, appen ainiziati gli studi tecnici, e da allora ha continuato a migliorare le sue competenze e imparare nuove tecnologie.
+                Nel corso degli anni, ha lavorato su diversi progetti, sia personali che per aziende e artisti emergenti, creando siti web funzionali e accattivanti.
+                Matteo è sempre alla ricerca di nuove sfide e opportunità per mighliorare le sue abilità in questo campo. 🚀
                 <br><br>
-                Matteo, oltre alla passione della programmazione, è anche un produttore musicale, capace di dare forma al suono con la stessa precisione con cui struttura un'interfaccia digitale. L’equilibrio tra creatività visiva e sonorità gli permette di fondere design e sound in esperienze uniche, trasformando ogni progetto in qualcosa di immersivo e interattivo. Dal codice al ritmo, Matteo è sempre alla ricerca di nuovi stimoli, innovando con energia e determinazione. 🚀🎧
+                🎧 Oltre alla programmazione, Matteo ha anche una passione per la muisica e la produzione musicale e produzione di tracce audio. Ha frequentato un corso musicale specializzato nello strumento Pianoforte, aumentando così le proprie capacità e competenze. 🎶
             </p>
         </section>
         
         
-        <section class="contattami">
+        <section class="contattami" id="contattami">
             <h1>Contattami</h1>
             <form action="" id="form" class="center">
                 <label for="">Nome: *</label>
@@ -156,7 +158,7 @@
                 <textarea type="" id="nome" name="nome" placeholder="Inserisci il tuo messaggio"> </textarea>    
                 
                 
-                <input type="submit" value="Invia" id="submit" onclick="sendForm()" style="cursor: pointer;">
+                <input class="button" type="submit" value="Invia" id="submit" onclick="sendForm()" style="cursor: pointer;">
             
             </form>
         </section>
