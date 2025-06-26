@@ -18,6 +18,14 @@
     scroll-behavior: smooth;
 }
 
+
+#logo {
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+#logo:hover {
+    filter: drop-shadow(0px 0px 10px rgb(162, 32, 255));
+    transition: all .2s cubic-bezier(.215, .61, .355, 1);
+}
 .center{ 
     display: flex;
     align-items: center;
