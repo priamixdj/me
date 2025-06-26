@@ -191,7 +191,8 @@ a:hover {
 
     /* border: solid red 2px; */
 
-    margin: 100px 0px;
+    padding-top: 50px;
+
 
     gap: 20px;
 }
@@ -332,6 +333,14 @@ form .button {
     box-shadow: none;
     border: none;
 }
+form .button:hover {
+    background-color: rgba(136, 136, 214, 0.208);
+}
+form .button:active {
+    scale: 0.95;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
 
 
 
