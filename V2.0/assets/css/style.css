@@ -285,24 +285,28 @@ svg {
 
 
     display: flex;
-    width: 100%;
+    width: 90%;
 
     flex-direction: column;
     /* border: solid red 2px; */
 }
 .contattami form {
     width: 100%;
-
     display: flex;
     flex-direction: column;
 
     margin: 100px 0;
     flex-wrap: wrap;
+
+    min-width: 100px;
+    border: solid red 2px;
 }
 
 form input, form textarea {
-    min-width: 600px;
+    min-width: 300px;
     min-height: 60px;
+
+    width: 90%;
 
     color: var(--white);
 
@@ -320,7 +324,6 @@ form input, form textarea {
     
     /* border: solid red 2px; */
 }
-
 
 form textarea{ 
     min-height: 150px;
@@ -345,24 +348,25 @@ form .button:active {
 
 
 
-@media (max-width: 1128px) {
+ @media (max-width: 1128px) {
     :root {
         --padding: 100px;
     }
-}
+} 
 @media (max-width: 800px) {
     :root {
         --padding: 10px;
     }
 }
-
-/* mobile */
     @media (max-width: 600px) {
         :root {
-            --padding: 10px;
+            --padding: 50px;
         }
+        /* * {
+            border: 1px solid #000;
+        } */
 
         header nav * { display: none; }
         .hamburger_menu { display: block; }
         
-    }
+    } 
