@@ -18,14 +18,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
 
-#logo {
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
-}
-#logo:hover {
-    filter: drop-shadow(0px 0px 10px rgb(162, 32, 255));
-    transition: all .2s cubic-bezier(.215, .61, .355, 1);
-}
 .center{ 
     display: flex;
     align-items: center;
@@ -38,14 +34,14 @@
 
 html {
     background: linear-gradient(rgba(17, 0, 67, 0.852),rgba(20, 0, 38, 0.884)) no-repeat;
-
+    
     width: auto;
     height: auto;
-
+    
     padding: 0 var(--padding);
-
+    
     /* border: solid red 2px; */
-
+    
     padding-bottom: 100px;
 }
 
@@ -62,7 +58,7 @@ section {
 
 /* MENU */
 header {
-
+    
     text-transform: uppercase;
     width: auto;
     /* border: solid red 2px; */
@@ -85,16 +81,16 @@ header nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-
+    
     text-decoration: none;
-
+    
     color: white;
 }
 
 li, a {text-decoration: none; color: white;}
 li {
     list-style: none;
-
+    
     /* border: solid red 2px; */
     
     min-width: 100px;
@@ -108,32 +104,39 @@ a:hover {
 
 
 
-    /* HAMBURGER MENU */
-    .hamburger_menu {
-        display: none;
-        position: relative;
-        top: 0;
-        left: 0;
+/* HAMBURGER MENU */
+.hamburger_menu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    width: fit-content;
+    height: fit-content;
+    
+    /* border: solid red 2px;    */
+    cursor: pointer;
+    
+    padding: 10px;
+}
+.hamburger_menu div {
+    position: relative;
+    
+    width: 30px;
+    height: 5px;
+    margin: 10px 0;
+    
+    background-color: white; 
+}
 
-        width: fit-content;
-        height: fit-content;
 
-        /* border: solid red 2px;    */
-        cursor: pointer;
-
-        padding: 10px;
-    }
-    .hamburger_menu div {
-        position: relative;
-
-        width: 30px;
-        height: 5px;
-        margin: 10px 0;
-
-        background-color: white; 
-    }
-
-
+#logo {
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+#logo:hover {
+    filter: drop-shadow(0px 0px 10px rgb(162, 32, 255));
+    transition: all .2s cubic-bezier(.215, .61, .355, 1);
+}
 
 
 /* HERO */
@@ -165,7 +168,6 @@ a:hover {
     border-radius: 50%;
     background-color: var(--text-light-blue);
 
-
     /* border: solid red 2px; */
 
     min-width: 250px;
@@ -173,6 +175,7 @@ a:hover {
 }
 #hero-image div img {
     position: relative;
+    /* border: solid red 2px; */
 
     width: 100%;
     border-radius: 50%;
@@ -299,7 +302,7 @@ svg {
     flex-wrap: wrap;
 
     min-width: 100px;
-    border: solid red 2px;
+    /* border: solid red 2px; */
 }
 
 form input, form textarea {
@@ -336,17 +339,15 @@ form .button {
     box-shadow: none;
     border: none;
 }
+
 form .button:hover {
     background-color: rgba(136, 136, 214, 0.208);
 }
+
 form .button:active {
     scale: 0.95;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
-
-
-
-
 
  @media (max-width: 1128px) {
     :root {
@@ -368,5 +369,23 @@ form .button:active {
 
         header nav * { display: none; }
         .hamburger_menu { display: block; }
-        
+
+        .hero div {
+            width: 100%;
+            position: absolute;
+
+            top: 20vh;
+            left: 12vw;
+        }
+        #hero-nome {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* border: solid red 2px; */
+            height: fit-content;
+            position: relative;
+            top: -30px;
+            left: 20vw;
+        }
+
     } 
