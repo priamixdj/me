@@ -7,6 +7,7 @@
     --text-light-blue: rgb(96, 199, 255);
     --dark-blue: rgb(21, 21, 88);
 }
+
 *{
     /* border: solid red 2px; */
     margin: 0;
@@ -19,7 +20,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .center{ 
@@ -38,23 +39,21 @@ html {
     width: auto;
     height: auto;
     
-    padding: 0 var(--padding);
+    padding: var(--padding);
     
     /* border: solid red 2px; */
     
     padding-bottom: 100px;
+    padding-top: 0;
 }
 
 h1 {
     font-size: 70px;
 }
 
-
 section {
     margin-top: 300px;
 }
-
-
 
 /* MENU */
 header {
@@ -68,6 +67,7 @@ header {
     flex-direction: row;
     margin-bottom: 60px;
 }
+
 #logo {
     /* border: solid red 2px; */
     position: relative;
@@ -134,7 +134,7 @@ a:hover {
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 #logo:hover {
-    filter: drop-shadow(0px 0px 10px rgb(162, 32, 255));
+    filter: drop-shadow(0px 0px 5px rgba(162, 32, 255, 0.445));
     transition: all .2s cubic-bezier(.215, .61, .355, 1);
 }
 
@@ -269,7 +269,7 @@ svg {
 .riguardo {
     /* border: 2px solid red; */
 
-    padding: 0 50px;
+    padding: 50px;
 }
 .riguardo h1 {
     color: var(--text-light-blue);
@@ -278,23 +278,17 @@ svg {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 /* CONTATTAMI */
 .contattami {
-
-    padding: 0 50px;
-
+    padding: 50px;
 
     display: flex;
-    width: 90%;
+    width: auto;
 
     flex-direction: column;
     /* border: solid red 2px; */
 }
 .contattami form {
-    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -306,7 +300,6 @@ svg {
 }
 
 form input, form textarea {
-    min-width: 300px;
     min-height: 60px;
 
     width: 90%;
@@ -361,7 +354,7 @@ form .button:active {
 }
     @media (max-width: 600px) {
         :root {
-            --padding: 50px;
+            --padding: 0px;
         }
         /* * {
             border: 1px solid #000;
