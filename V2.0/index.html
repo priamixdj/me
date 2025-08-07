@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="author" content="Matteo">
         <meta name="description" content="Portfolio">
-        <meta name="vewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -158,10 +158,14 @@
                 <textarea type="" id="messaggio" name="messaggio" placeholder="Inserisci il tuo messaggio"> </textarea>    
                 
                 
-                <input class="button" type="submit" value="Invia" id="submit" onclick="sendForm()" style="cursor: pointer;">
+                <input class="button" type="submit" value="Invia" id="submit" style="cursor: pointer;">
             </form>
         </section>
 
+        <script type="text/javascript">
+            import emailjs from 'https://cdn.emailjs.com/sdk/3.11/email.min.js';
+            emailjs.init('gs2NywfF3uc76nCPq');
+        </script>
 
     </body>
 
