@@ -160,9 +160,7 @@ header {
     #hero-image div {
         border-radius: 50%;
         background-color: var(--text-light-blue);
-
         /* border: solid red 2px; */
-
         min-width: 250px;
         width: 300px;
     }
@@ -339,10 +337,9 @@ header {
 
         .hero div {
             width: 100%;
-            position: absolute;
-
-            top: 20vh;
-            left: 12vw;
+            position: relative;
+            top: 15px;
+            left: -12vw;
         }
         #hero-nome {
             align-items: center;
