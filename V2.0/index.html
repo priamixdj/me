@@ -13,13 +13,17 @@
     </head>
     
     <header class="">
+        <!-- <select id="languageSwitcher">
+            <option value="it">Italiano</option>
+            <option value="en">English</option>
+        </select> -->
         <img id="logo" src="assets/img/logo.png" alt="logo">
         
         <nav class="center">
             <li><a href="#">Home</a></li>
-            <li><a href="#competenze">Competenze</a></li>
-            <li><a href="#riguardo">Riguardo</a></li>
-            <li><a href="#contattami">Contattami</a></li>
+            <li><a href="#competenze" data-i18n="competenze" >Competenze</a></li>
+            <li><a href="#riguardo" data-i18n="riguardo">Riguardo</a></li>
+            <li><a href="#contattami" data-i18n="contattami">Contattami</a></li>
         </nav>
         
         <div class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">
@@ -34,11 +38,11 @@
     <body>
 
         <section class="hero">
-            <div id="hero-nome" class="center">
-                <h1 class="">Matteo</h1>
-                <h1>Priamix</h1>
+            <div id="hero-name" class="center">
+                <h1 class="" aria-label="matteo" >Matteo</h1>
+                <h1 aria-label="priamix">Priamix</h1>
 
-                <p>sviluppatore web, designer web, produttore musicale</p>
+                <p data-i18n="hero.description">sviluppatore web, designer web, produttore musicale</p>
             </div>
             
             <div id="hero-image" class="center">
@@ -131,7 +135,7 @@
         <section class="riguardo" id="riguardo">
             <h1>Riguardo me</h1>
             <br>
-            <p>
+            <p data-i18n="riguardo.p">
                 💻 Matteo è uno studente tecnico informatico di Piove di Sacco(PD) con una passione per la programmazione e il design di siti web.
                 Ha iniziato a programmare all' età di 15 anni, appen ainiziati gli studi tecnici, e da allora ha continuato a migliorare le sue competenze e imparare nuove tecnologie.
                 Nel corso degli anni, ha lavorato su diversi progetti, sia personali che per aziende e artisti emergenti, creando siti web funzionali e accattivanti.
@@ -144,8 +148,8 @@
         <section class="contattami" id="contattami">
             <h1>Contattami</h1>
 
-            <h3>Mail <a aria-label="mail to" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com </i></a></h3>
-            <h3>Instagram <a aria-label="Instagram link" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h3>
+            <h2>Mail <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com</i></a></h2>
+            <h2>Instagram <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h2>
 
 
             <!-- <form action="" id="form" class="center">
@@ -171,6 +175,7 @@
     </body>
 
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/translate.js"></script>
 
     <!-- <script src="assets/js/mail.js"></script> -->
 
