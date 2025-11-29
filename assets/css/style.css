@@ -245,7 +245,7 @@ header {
             margin: 0 10px;
             height: 120px;
 
-            animation: scroll-x 15s linear infinite;
+            animation: scroll-x 20s linear infinite;
         }
     
     #competenze:has(.card:hover) .card, .compAggiuntive #container_comp:has(.card:hover) .card{
