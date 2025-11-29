@@ -18,9 +18,7 @@
 
     scroll-behavior: smooth;
 }
-body {
-    /* overflow-x: hidden; */
-}
+
 .center{ 
     display: flex;
     align-items: center;
@@ -62,9 +60,13 @@ li {
 a:hover {
     border-bottom: 2px solid rgb(255, 255, 255);
 }
+h1 {
+    width: 100%;
+    font-size: 60px;
+}
 p {
     line-height: 1.5;
-    text-align: center; 
+    text-align: start; 
 }
 
 .circle {
@@ -74,7 +76,7 @@ p {
 
 /* MENU */
 header {
-    
+    position: relative;
     text-transform: uppercase;
     width: auto;
     /* border: solid red 2px; */
@@ -96,8 +98,9 @@ header {
         color: white;
     }
 #logo {
-    /* border: solid red 2px; */
-    position: relative;
+    /* border: solid rgb(255, 255, 255) 2px; */
+    position: absolute;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -136,17 +139,20 @@ header {
     }
 
 
-/* HERO */
-/* .hero * {border: solid red 2px;} */
 .hero {
     display: flex;
+    flex-wrap: wrap-reverse;
     flex-direction: row;
     margin-top: 0;
-    height: 600px;
+    height: auto;
+    width: 100%;
+    /* border: solid red 2px; */
+    gap: 30px;
+    justify-content: space-between;
 }
     .hero div {
-        max-width: 50%;
-        width: 50%;
+        /* border: solid red 2px; */
+        min-width: 200px;
     }
     #hero-name {
         flex-direction: column;
@@ -202,49 +208,79 @@ header {
     .card h2 {
         min-height: 40px;
     }
+
 .compAggiuntive {
     border: 2px solid #656565;
     border-radius: 20px;
-    width: 100%;
+    width: fit-content;
     height: 200px;
-    box-sizing: border-box;
 
     overflow: hidden;
     position: relative;
 
     opacity: 60%;
 }
-    .compAggiuntive .card {
+    .compAggiuntive #container_comp {
+        display: flex;
+        flex-direction: row;
+        /* border: solid red 2px; */
         position: relative;
         box-sizing: border-box;
         margin: 0 10px;
-        height: 120px;
+        height: 100%;
+        width: fit-content;
+        /* per mobile */
+        overflow-x: hidden;
+        overflow-y: hidden;
 
-        animation: scroll-x 30s linear infinite;
+        scrollbar-width: none;       /* Firefox */
+        -ms-overflow-style: none;    /* IE */
+
+        /* animation: scroll-x 5s linear infinite; */
     }
-    .compAggiuntive:has(.card:hover) .card {
-        animation-play-state: paused;
+        .compAggiuntive #container_comp .card {
+            /* border: solid red 2px; */
+            position: relative;
+            box-sizing: border-box;
+            margin: 0 10px;
+            height: 120px;
+
+            animation: scroll-x 15s linear infinite;
+        }
+    
+    #competenze:has(.card:hover) .card, .compAggiuntive #container_comp:has(.card:hover) .card{
+        filter: grayscale(100%);
     }
-    .compAggiuntive .card:hover {
-        border: none;
+    #competenze:has(.card:hover) .card {
+        filter: grayscale(100%);
     }
+    #competenze .card:hover, .compAggiuntive .card:hover {
+        filter: grayscale(0%) !important;
+    }
+
+    .compAggiuntive #container_comp:has(.card:hover) .card { animation-play-state: paused; }
+    .compAggiuntive .card:hover { filter: grayscale(0%) !important; }
 
 @keyframes scroll-x {
     0% {
-        transform: translateX(650%);
+        transform: translateX(-0%);
     }
     100% {
-        transform: translateX(-700%);
+        transform: translateX(-755%);
     }
 }
+
 
 /* RIGUARDO */
 .riguardo {
     /* border: 2px solid red; */
-
     padding: 50px;
 }
+.riguardo * {
+    /* border: solid red 2px; */
+}
     .riguardo h1 {
+        /* border: solid red 2px; */
         color: var(--text-light-blue);
     }
     .riguardo p {
@@ -317,48 +353,22 @@ header {
 
  @media (max-width: 1128px) {
     :root {
-        --padding: 100px;
+        --padding: 40px;
     }
 } 
-@media (max-width: 800px) {
+ @media (max-width: 800px) {
     :root {
         --padding: 10px;
     }
+    .hero {
+        justify-content: center !important;
+    }
+
+    p, h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
-    @media (max-width: 600px) {
-        :root {
-            --padding: 0px;
-        }
-        /* * {
-            border: 1px solid #000;
-        } */
-
-        header {
-            opacity: 0;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        header nav * { display: none; }
-        .hamburger_menu { display: block; }
-
-        .hero div {
-            width: 100%;
-            position: relative;
-            top: 15px;
-            left: -12vw;
-        }
-        #hero-name {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            /* border: solid red 2px; */
-            height: fit-content;
-            position: relative;
-            top: -30px;
-            left: 20vw;
-        }
-
-    } 
+    
