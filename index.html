@@ -33,16 +33,34 @@
 
         <!-- possibilità di cambiare tema -->
          <!-- e anche multilingua -->
+
+
+        <style>
+            .typetext {
+                border-right: 3px solid var(--text-light-blue);
+                padding-right: 5px;
+                animation: blink .7s infinite;
+            }
+
+            @keyframes blink {
+                50% { border-color: transparent; }
+            }
+
+
+        </style>
     </header>
 
     <body>
 
         <section class="hero">
-            <div id="hero-name" class="center">
-                <h1 class="" aria-label="matteo" >Matteo</h1>
-                <h1 aria-label="priamix">Priamix</h1>
+            <div id="hero-name" class="center ">
+                <h1 aria-label="matteo" class="" >Matteo</h1>
+                <h1 aria-label="priamix" class="">Priamix</h1>
 
-                <p data-i18n="hero.description">sviluppatore web, designer web, produttore musicale</p>
+                <p data-i18n="hero.description" class="typetext">sviluppatore web, designer web, produttore musicale</p>
+                <p id="testo"></p>
+
+
             </div>
             
             <div id="hero-image" class="center">
@@ -178,5 +196,33 @@
     <script src="assets/js/translate.js"></script>
 
     <!-- <script src="assets/js/mail.js"></script> -->
+
+    <script>
+        function typewriter(element, speed = 50) {
+            const text = element.innerText.trim();
+            element.innerText = ""; // svuota il testo per riscriverlo
+            let i = 0;
+
+            function write() {
+                if (i < text.length) {
+                    element.innerText += text.charAt(i);
+                    i++;
+                    setTimeout(write, speed);
+                }
+            }
+
+            write();
+        }
+
+        // seleziona TUTTI gli elementi con classe .typetext e li anima
+        const elements = document.querySelectorAll(".typetext");
+        elements.forEach((el, index) => {
+            // ritardo tra una scritta e l'altra (opzionale)
+            setTimeout(() => typewriter(el, 50), index * 500);
+        });
+    </script>
+
+
+
 
 </html>
