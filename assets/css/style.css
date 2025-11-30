@@ -247,17 +247,9 @@ header {
 
             animation: scroll-x 20s linear infinite;
         }
-    
-    #competenze:has(.card:hover) .card, .compAggiuntive #container_comp:has(.card:hover) .card{
-        filter: grayscale(100%);
-    }
-    #competenze:has(.card:hover) .card {
-        filter: grayscale(100%);
-    }
-    #competenze .card:hover, .compAggiuntive .card:hover {
-        filter: grayscale(0%) !important;
-    }
-
+    #competenze:has(.card:hover) .card, .compAggiuntive #container_comp:has(.card:hover) .card{ filter: grayscale(100%); }
+    #competenze:has(.card:hover) .card { filter: grayscale(100%); }
+    #competenze .card:hover, .compAggiuntive .card:hover { filter: grayscale(0%) !important; }
     .compAggiuntive #container_comp:has(.card:hover) .card { animation-play-state: paused; }
     .compAggiuntive .card:hover { filter: grayscale(0%) !important; }
 
@@ -287,6 +279,14 @@ header {
         font-family: Arial, Helvetica, sans-serif;
     }
 
+.lavori {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.lavori .site_container {
+    width: 300px;
+}
 /* CONTATTAMI */
 .contattami {
     padding: 50px;
