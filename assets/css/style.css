@@ -39,6 +39,7 @@ html {
     padding-top: 0;
 }
 section {
+    scroll-margin-top: 40px;
     margin-top: 300px;
 }
 svg {
@@ -76,15 +77,19 @@ p {
 
 /* MENU */
 header {
-    position: relative;
+    position: sticky;
+    top: 0;
     text-transform: uppercase;
     width: auto;
     /* border: solid red 2px; */
+    border-radius: 0px 0 10px 10px;
+    backdrop-filter: blur(50px);
     height: 70px;
     
     display: flex;
     flex-direction: row;
     margin-bottom: 60px;
+    z-index: 4;
 }
     header nav {
         /* border: solid red 2px; */
@@ -138,6 +143,10 @@ header {
         transition: all .2s cubic-bezier(.215, .61, .355, 1);
     }
 
+
+main {
+    margin-top: 100px;
+}
 
 .hero {
     display: flex;
