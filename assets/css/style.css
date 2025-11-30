@@ -77,10 +77,11 @@ p {
 
 /* MENU */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     text-transform: uppercase;
-    width: auto;
+    width: 100%;
     /* border: solid red 2px; */
     border-radius: 0px 0 10px 10px;
     backdrop-filter: blur(50px);
@@ -93,48 +94,56 @@ header {
 }
     header nav {
         /* border: solid red 2px; */
+        display: 1;
         position: relative;
         width: 100%;
         display: flex;
         flex-direction: row;
         
         text-decoration: none;
-        
+        overflow: hidden;
         color: white;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
     }
+
 #logo {
     /* border: solid rgb(255, 255, 255) 2px; */
     position: absolute;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 20px;
 }
 
 
 /* HAMBURGER MENU */
 .hamburger_menu {
-    display: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10px;
+    right: 0;
+
     width: fit-content;
     height: fit-content;
-    
+
     /* border: solid red 2px;    */
     cursor: pointer;
-    
+
     padding: 10px;
+    cursor: pointer;
 }
-    .hamburger_menu div {
-        position: relative;
-        
-        width: 30px;
-        height: 5px;
-        margin: 10px 0;
-        
-        background-color: white; 
-    }
+
+.hamburger_menu span {
+    position: relative;
+
+    width: 50px;
+    height: 5px;
+    margin: 5px 0;
+    /* border: solid red 2px; */
+
+    background-color: white; 
+}
+
 #logo {
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
@@ -360,7 +369,7 @@ main {
 
 
 
- @media (max-width: 1128px) {
+@media (max-width: 1128px) {
     :root {
         --padding: 40px;
     }
@@ -378,6 +387,28 @@ main {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        backdrop-filter: blur(0);
+    }
+    header nav{
+        backdrop-filter: blur(40px);
+        flex-direction: column;
+        /* border: solid red 2px; */
+        height: 100vh;
+        opacity: 0;
+        gap: 30px;
+        display: none;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+        backdrop-filter: blur(30px);
+    }
+    .open {
+        opacity: 100%;
+        background-color: rgba(16, 27, 61, 0.911);
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
     }
 }
     

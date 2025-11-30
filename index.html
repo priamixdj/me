@@ -12,8 +12,6 @@
         <title>Priamix | site</title>
         <link rel="shortcut icon" href="icon.png">
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/home.css">
 
         <!-- Font google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,17 +30,17 @@
             </select> -->
             <img id="logo" src="assets/img/logo.png" alt="logo">
             
-            <nav class="center">
+            <nav class="center" id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#competenze" data-i18n="competenze" >Competenze</a></li>
                 <li><a href="#riguardo" data-i18n="riguardo">Riguardo</a></li>
                 <li><a href="#contattami" data-i18n="contattami">Contattami</a></li>
             </nav>
             
-            <div class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">
-                <div></div>
-                <div></div>         
-            </div>
+            <a><div class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>        
+            </div></a>
 
             <!-- possibilità di cambiare tema -->
             <!-- e anche multilingua -->
@@ -193,6 +191,7 @@
 
     <script src="assets/js/index.js"></script>
     <script src="assets/js/competenze.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/translate.js"></script>
 
     <!-- <script src="assets/js/mail.js"></script> -->
