@@ -471,10 +471,11 @@ footer div {
     }
 
     
+        #hamburger_menu.open {  height: 50px; }
 
         #hamburger_menu.open span {
             margin: 0;
-            position: absolute;
+            position: relative;
                 top: 16px;
                 right: 10px;
 
@@ -488,6 +489,8 @@ footer div {
         #hamburger_menu.open span:first-child  {
             transform: rotate(45deg);
             /* border: solid red 2px; */
+            position: relative;
+            top: 20px;
         }
 
     footer {
