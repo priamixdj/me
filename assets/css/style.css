@@ -19,6 +19,19 @@
     scroll-behavior: smooth;
 }
 
+#mouse {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--text-light-blue);
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.2;
+    position: fixed;
+    pointer-events: none;
+}
+
+
 .center{ 
     display: flex;
     align-items: center;
@@ -37,6 +50,7 @@ html {
     
     padding-bottom: 100px;
     padding-top: 0;
+
 }
 section {
     margin-top: 300px;
@@ -355,11 +369,15 @@ header {
     :root {
         --padding: 40px;
     }
+    #mouse {
+        display: none;
+    }
 } 
  @media (max-width: 800px) {
     :root {
         --padding: 10px;
     }
+    
     .hero {
         justify-content: center !important;
     }
