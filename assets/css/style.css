@@ -88,6 +88,9 @@ p {
     border-radius: 50%;
 }
 
+.light-blue {
+    color: var(--text-light-blue);
+}
 
 /* MENU */
 header {
@@ -306,10 +309,6 @@ main {
 .riguardo * {
     /* border: solid red 2px; */
 }
-    .riguardo h1 {
-        /* border: solid red 2px; */
-        color: var(--text-light-blue);
-    }
     .riguardo p {
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -321,7 +320,29 @@ main {
 }
 .lavori .site_container {
     width: 300px;
+    background-color: rgba(255, 255, 255, 0.509);
+    padding: 20px; 
 }
+
+/* PARTNERSHIPS */
+#partnerships {
+    /* border: solid red 2px; */
+    position: relative;
+}
+    #partnerships .partner_card {
+        /* border: solid red 2px; */
+        position: relative;
+        width: 200px;
+    }
+    #partnerships .partner_card p {
+       /* border: solid red 2px; */
+       font-size: 25px !important;
+    }
+    #partnerships .partner_card img {
+        width: 100%;
+    }
+
+
 /* CONTATTAMI */
 .contattami {
     display: flex;
