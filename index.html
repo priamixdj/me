@@ -86,7 +86,7 @@
             <section id="competenze" class="competenze center">
                 <div class="card">
                     <h2>HTML</h2>
-                        <img src="assets/img/icon/html_logo.svg" alt="">
+                        <img src="assets/img/icon/html_logo.svg" alt="html logo">
                 </div>  
                 <div class="card">
                     <h2>PHP</h2>
@@ -129,7 +129,7 @@
 
             </section>
 
-            <section class="riguardo" id="riguardo">
+            <section class="riguardo padding" id="riguardo">
                 <h1>Riguardo me</h1>
                 <br>
                 <p data-i18n="riguardo.p">
@@ -141,8 +141,24 @@
                     🎧 Oltre alla programmazione, Matteo ha anche una passione per la muisica e la produzione musicale e produzione di tracce audio. Ha frequentato un corso musicale specializzato nello strumento Pianoforte, aumentando così le proprie capacità e competenze. 🎶
                 </p>
             </section>
+
+            <section class="lavori padding" id="lavori">
+                <h1>Contattami</h1>
+                <div class="site_container">
+                    <iframe src="https://www.aeromik.com" frameborder="0" width="100%" height="200px">
+                    </iframe>
+                    
+                    <a href="https://www.aeromik.com" target="_blank">Apri da qui!</a>
+                </div>
+                <div class="site_container">
+                    <iframe src="https://urbannc.free.nf" frameborder="0" width="100%" height="200px">
+                    </iframe>
+                    <a href="https://urbannc.free.nf" target="_blank">Apri da qui!</a>
+                </div>
+                
+            </section>
             
-            <section class="contattami" id="contattami">
+            <section class="contattami padding" id="contattami">
                 <h1>Contattami</h1>
 
                 <h2>Mail <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com</i></a></h2>
@@ -164,29 +180,16 @@
                 </form> -->
             </section> 
 
-            <section class="lavori" id="lavori">
-                <div class="site_container">
-                    <iframe src="https://www.aeromik.com" frameborder="0" width="100%" height="200px">
-                    </iframe>
-                    
-                    <a href="https://www.aeromik.com" target="_blank">Apri da qui!</a>
-                </div>
-                <div class="site_container">
-                    <iframe src="https://urbannc.free.nf" frameborder="0" width="100%" height="200px">
-                    </iframe>
-                    <a href="https://urbannc.free.nf" target="_blank">Apri da qui!</a>
-                </div>
-                
-            </section>
-
             <!-- <script type="text/javascript">
                 import emailjs from 'https://cdn.emailjs.com/sdk/3.11/email.min.js';
                 emailjs.init('gs2NywfF3uc76nCPq');
             </script> -->
         </main>
 
-        
-
+        <footer>
+            <div><p>Priamix Portfolio</p></div>
+            <div><p><a href="">Policy Privacy</a></p></div>
+        </footer>
     </body>
 
     <script src="assets/js/index.js"></script>
@@ -234,13 +237,15 @@
             setTimeout(() => typewriter(el, 50, text), index * 1200);
 
             // rimuovi il bordo dopo 1 secondo
-            if (text != text_elements[text_elements.length-1])
+            // if (text != text_elements[text_elements.length-1])
                 setTimeout(() => {
                     el.style.borderRight = "none";
                 }, index * 1500 + text.length * 50 + 500);
         });
 
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
 
 
 
