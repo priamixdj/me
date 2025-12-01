@@ -31,10 +31,10 @@ competenze = [
     },
 ]
 
-whriteIn(divComp)
-whriteIn(divComp)
+writeIn(divComp)
+writeIn(divComp)
 
-function whriteIn(div) {
+function writeIn(div) {
     competenze.forEach(element => {
         div.innerHTML += `
             <div class="card c-com">
