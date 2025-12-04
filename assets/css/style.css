@@ -170,7 +170,7 @@ header {
 .hamburger_menu span {
     position: relative;
 
-    width: 50px;
+    width: 30px;
     height: 5px;
     margin: 5px 0;
     /* border: solid red 2px; */
@@ -470,6 +470,9 @@ footer div {
     }
     .hamburger_menu{
         display: flex;
+        /* border-right: 1px solid #0081fa; */
+        gap: 0px;
+        height: 50px;
     }
     header nav{
         backdrop-filter: blur(40px);
@@ -487,6 +490,9 @@ footer div {
         background-color: rgba(21, 21, 51, 0.873);
         transition: all .5s cubic-bezier(.215, .61, .355, 1);
     }
+        #hamburger_menu span:last-child {
+            /* border: solid rgb(211, 9, 9) 2px; */
+        }
 
     
         #hamburger_menu.open {  height: 50px; }
@@ -494,21 +500,14 @@ footer div {
         #hamburger_menu.open span {
             margin: 0;
             position: relative;
-                top: 16px;
-                right: 10px;
-
             transition: all .5s cubic-bezier(.215, .61, .355, 1);
          }
-        #hamburger_menu.open span:last-child { 
-            transform: rotate(-45deg); 
-            /* border: solid red 2px; */
+        #hamburger_menu.open span:last-child {  
+
         }
 
         #hamburger_menu.open span:first-child  {
-            transform: rotate(45deg);
-            /* border: solid red 2px; */
-            position: relative;
-            top: 20px;
+            
         }
 
     footer {
