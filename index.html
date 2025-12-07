@@ -12,7 +12,6 @@
         <title>Priamix | site</title>
         <link rel="shortcut icon" href="icon.png">
 
-
         <!-- Font google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,6 +66,7 @@
 
             </style>
         </header>
+
         <main>
             <section class="hero center">
                 <div id="hero-name" class="center">
@@ -112,12 +112,10 @@
                         <img src="assets/img/icon/c_logo.svg" alt="">
                     
                 </div>
-
                 <div class="card">
                     <h2>JAVA</h2>
                         <img src="assets/img/icon/java_icon.svg" alt="">
                 </div>
-
                 <h2 style="width: 100%; margin-top: 40px; opacity: 60%;">competenze aggiuntive</h1>
                 <div class="compAggiuntive center" id="compAggiuntive">
                     <div id="container_comp">
@@ -128,7 +126,6 @@
                     </div>
                     
                 </div>           
-
             </section>
 
             <section class="riguardo padding" id="riguardo">
@@ -216,7 +213,7 @@
     <script src="assets/js/competenze.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/translate.js"></script>
-    <script src="assets/js/accessibilita.js"></script>
+    <!-- <script src="assets/js/accessibilita.js"></script> -->
 
     <!-- <script src="assets/js/mail.js"></script> -->
 
@@ -244,7 +241,6 @@
             write();
         }
 
-    
         const elements = document.querySelectorAll(".typetext");
 
         elements.forEach((el, index) => {
@@ -262,12 +258,6 @@
                     el.style.borderRight = "none";
                 }, index * 1500 + text.length * 50 + 500);
         });
-
     </script>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script> -->
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
 </html>
