@@ -224,20 +224,33 @@ main {
         .hero #hero-name h1:nth-child(2) {
             color: var(--text-light-blue);
         }
-    #hero-image div {
-        border-radius: 50%;
-        background-color: var(--text-light-blue);
-        /* border: solid red 2px; */
-        min-width: 250px;
-        width: 300px;
-    }
-        #hero-image div img {
-            position: relative;
-            /* border: solid red 2px; */
 
-            width: 100%;
-            border-radius: 50%;
-        }
+#hero-image div {
+    border-radius: 50%;
+    background-color: var(--text-light-blue);
+    /* border: solid red 2px; */
+    min-width: 250px;
+    width: 300px;
+    overflow: hidden;
+    scale: 1;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+    #hero-image div img {
+        position: relative;
+        /* border: solid red 2px; */
+        scale: 1;
+        width: 100%;
+        transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    }
+    #hero-image div:hover {
+        filter: grayscale(0);
+        scale: .95;
+        transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    }
+    #hero-image div:hover img {
+        filter: grayscale(1);
+        transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    }
 
 /* competenze */
 .competenze {
@@ -524,6 +537,7 @@ footer div {
 
     footer {
         justify-content: center;
+        flex-direction: column;
         gap: 60px;
     }
     footer div {
@@ -538,6 +552,5 @@ footer div {
         backdrop-filter: blur(0px);
         /* border: 1px solid #ff0000; */
     }    
-    
 }
     
