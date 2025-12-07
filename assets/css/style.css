@@ -438,7 +438,7 @@ footer div {
 }
 
 
-
+/* 
 @media (max-width: 1128px) {
     :root {
         --padding: 40px;
@@ -446,7 +446,7 @@ footer div {
     #mouse {
         display: none;
     }
-} 
+}  */
  @media (max-width: 800px) {
     :root {
         --padding: 10px;
@@ -464,7 +464,7 @@ footer div {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1128px) {
     header {
         backdrop-filter: blur(0px);
     }
