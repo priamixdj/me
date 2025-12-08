@@ -22,6 +22,16 @@
     
     <div id="mouse"></div>
     <body>
+        <?php
+            if(isset($_GET['success_contact_mail'])){
+                $success = $_GET['success_contact_mail'];
+                if($success == 1){
+                    echo '<p class="alert" style="color: green; font-weight: bold;">Messaggio inviato con successo!</p>';
+                } else if($success == 0){
+                    echo '<p class="alert" style="color: red; font-weight: bold;">Errore durante l\'invio del messaggio. Riprova più tardi.</p>';
+                }
+            }
+        ?>
         <header>
             <!-- <select id="languageSwitcher">
                 <option value="it">Italiano</option>
@@ -181,25 +191,17 @@
                 <h2>Instagram <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h2> -->
 
 
-                <?php
-                    if(isset($_GET['success_contact_mail'])){
-                        $success = $_GET['success_contact_mail'];
-                        if($success == 1){
-                            echo '<p style="color: green; font-weight: bold;">Messaggio inviato con successo!</p>';
-                            echo "<script>alert('Email inviata con successo!');</script>";
-                        } else if($success == 0){
-                            echo '<p style="color: red; font-weight: bold;">Errore durante l\'invio del messaggio. Riprova più tardi.</p>';
-                            echo "<script>alert('Email non inviata!');</script>";
-                        }
-                    }
-                ?>
+                
                 <form action="sendMail.php" method="post" id="form" class="center">
+                    <p id="nome_validation"></p>
                     <label for="">Nome: *</label>
                     <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required> 
 
+                    <p id="mail_validation"></p>
                     <label for="">Email: *</label>
                     <input type="text" id="email" name="email" placeholder="Inserisci la tua mail" required> 
 
+                    <p id="messaggio_validation"></p>
                     <label for="">Messaggio: </label>
                     <textarea type="" id="messaggio" name="message" placeholder="Inserisci il tuo messaggio"> </textarea>    
                     
@@ -225,6 +227,7 @@
     <script src="assets/js/competenze.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/translate.js"></script>
+    <script src="assets/js/validationForm.js"></script>
     <!-- <script src="assets/js/accessibilita.js"></script> -->
 
     <!-- <script src="assets/js/mail.js"></script> -->
@@ -238,7 +241,6 @@
         text_elements = ["sviluppatore web", "produttore musicale"]
 
         function typewriter(element, speed = 50, text) {
-            console.log(text)
             const textC = text;
             element.innerText = ""; // svuota il testo per riscriverlo
             let i = 0;

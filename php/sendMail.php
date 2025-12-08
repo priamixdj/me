@@ -97,22 +97,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mittente_mail->isHTML(true);
         $mittente_mail->Subject = 'Ricevuto il tuo messaggio!';
         $mittente_mail->Body = '
-            <style> 
-                h3 { color: #4CAF50; }
-                p { font-size: 16px; }
-                body { font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; }
-            </style>
-            <h3 style="color: #4CAF50; ">Ciao {$name}, abbiamo ricevuto il tuo messaggio!</h3>
-            <p><strong>Messaggio:</strong><br>{$message}</p>
+            <h3 style="color: #4CAF50; ">Ciao ' . $name . ', abbiamo ricevuto il tuo messaggio!</h3>
+            <p><strong>Messaggio:</strong><br>' . $message . '</p>
         ';
 
         // Invia
         $mittente_mail->send();
-        header('Location: index.php#contattami?success_contact_mail=1');
+        header('Location: index.php?success_contact_mail=1');
         exit();
 
     } catch (Exception $e) {
-        header('Location: index.php#contattami?success_contact_mail=0');
+        header('Location: index.php?success_contact_mail=0');
         exit();
     }   
 }
