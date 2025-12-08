@@ -464,6 +464,9 @@ footer div {
     :root {
         --padding: 10px;
     }
+    main {
+        padding: 0 200px;
+    }
 }
 @media (max-width: 1128px) {    
     header {
@@ -487,6 +490,9 @@ footer div {
                 opacity: 0;
                 transition: opacity 1s cubic-bezier(.215, .61, .355, 1)
             }
+    main {
+        padding: 0 var(--padding);
+    }
 
     .hero {
         justify-content: center;
