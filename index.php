@@ -1,0 +1,275 @@
+<html lang="it">
+    <head>
+        <title>portfolio priamix</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Matteo">
+        <meta name="description" content="Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Priamix">
+        <meta name="name" content="Priamix site">
+
+        <title>Priamix | site</title>
+        <link rel="shortcut icon" href="icon.png">
+
+        <!-- Font google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">    
+            <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    
+    
+    <div id="mouse"></div>
+    <body>
+        <header>
+            <!-- <select id="languageSwitcher">
+                <option value="it">Italiano</option>
+                <option value="en">English</option>
+            </select> -->
+            <img id="logo" src="assets/img/logo.png" alt="logo">
+            
+            <nav class="center close" id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#competenze" data-i18n="competenze" >Competenze</a></li>
+                <li><a href="#riguardo" data-i18n="riguardo">Riguardo</a></li>
+                <!-- <li><a href="#lavori" data-i18n="lavori">I miei lavori</a></li> -->
+                <li><a href="#partnerships" data-i18n="partnerships">Partnership</a></li>
+                <li><a href="#contattami" data-i18n="contattami">Contattami</a></li>
+            </nav>
+            
+            <a><div class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>        
+            </div></a>
+
+            <!-- possibilità di cambiare tema -->
+            <!-- e anche multilingua -->
+
+
+            <style>
+                .typetext {
+                    border-right: 3px solid var(--text-light-blue);
+                    padding-right: 5px;
+                    animation: blink .7s infinite;    
+                    white-space: pre;                
+                }
+                .typetext-end {
+                    border-right: 3px solid var(--text-light-blue);
+                    padding-right: 5px;
+                    animation: blink .7s infinite;
+                }
+
+                @keyframes blink {
+                    50% { border-color: transparent; }
+                }
+
+            </style>
+        </header>
+
+        <main>
+            <section class="hero center">
+                <div id="hero-name" class="center">
+                    <h1 aria-label="matteo" class="" >Matteo</h1>
+                    <h1 aria-label="priamix" class="">Priamix</h1>
+
+                    <p data-i18n="hero.description" class="typetext"></p>
+                    <p class="typetext"></p>
+                    <p class="typetext-end"></p>
+                </div>
+                
+                <div id="hero-image" class="center">
+                    <div class="circle">
+                        <img alt="profile_image" src="assets/img/profilo.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section id="competenze" class="competenze center">
+                <div class="card">
+                    <h2>HTML</h2>
+                        <img src="assets/img/icon/html_logo.svg" alt="html logo">
+                </div>  
+                <div class="card">
+                    <h2>PHP</h2>
+                        <img src="assets/img/icon/php_logo.svg" alt="">
+                </div>  
+                <div class="card">
+                    <h2>SQL</h2>
+                        <img src="assets/img/icon/icons8-sql.svg" alt="">
+                </div>  
+                <div class="card">
+                    <h2>CSS</h2>
+                        <img src="assets/img/icon/css_logo.svg" alt="">
+                </div>  
+                <div class="card">
+                    <h2>JS</h2>
+                        <img src="assets/img/icon/js_icon.svg" alt="">
+                </div>  
+                <div class="card">
+                    <h2>C/C++</h2>
+
+                        <img src="assets/img/icon/c_logo.svg" alt="">
+                    
+                </div>
+                <div class="card">
+                    <h2>JAVA</h2>
+                        <img src="assets/img/icon/java_icon.svg" alt="">
+                </div>
+                <h2 style="width: 100%; margin-top: 40px; opacity: 60%;">competenze aggiuntive</h1>
+                <div class="compAggiuntive center" id="compAggiuntive">
+                    <div id="container_comp">
+                        <!-- <div class="card c-com">
+                        <h2>Unity 2D</h2>
+                            <img alt="unity icon" src="assets/img/icon/icons8-unity.svg" alt="">
+                        </div> -->
+                    </div>
+                    
+                </div>           
+            </section>
+
+            <section class="riguardo padding" id="riguardo">
+                <h1 class="light-blue">Riguardo me</h1>
+                <br>
+                <p data-i18n="riguardo.p">
+                    💻 Matteo è uno studente tecnico informatico di Piove di Sacco(PD) con una passione per la programmazione e il design di siti web.
+                    Ha iniziato a programmare all' età di 15 anni, appen ainiziati gli studi tecnici, e da allora ha continuato a migliorare le sue competenze e imparare nuove tecnologie.
+                    Nel corso degli anni, ha lavorato su diversi progetti, sia personali che per aziende e artisti emergenti, creando siti web funzionali e accattivanti.
+                    Matteo è sempre alla ricerca di nuove sfide e opportunità per mighliorare le sue abilità in questo campo. 🚀
+                    <br><br>
+                    🎧 Oltre alla programmazione, Matteo ha anche una passione per la muisica e la produzione musicale e produzione di tracce audio. Ha frequentato un corso musicale specializzato nello strumento Pianoforte, aumentando così le proprie capacità e competenze. 🎶
+                </p>
+            </section>
+
+            <!-- <section class="lavori padding" id="lavori">
+                <h1>I miei lavori</h1>
+                <div class="site_container">
+                    <p style="color: red; font-weight: 2px !important;">!preview non ancora disponibile</p>
+                    <iframe src="" frameborder="0" width="100%" height="200px">
+                    </iframe>
+                    
+                    <a href="https://www.aeromik.com" target="_blank">Apri da qui!</a>
+                </div>
+                <div class="site_container">
+                    <p style="color: red; font-weight: 2px !important;">!preview non ancora disponibile</p>
+                    <iframe src="" frameborder="0" width="100%" height="200px" aria-placeholder="">
+                        
+                    </iframe>
+                    <a href="https://urbannc.free.nf" target="_blank">Apri da qui!</a>
+                </div>
+                <div class="site_container">
+                    <p style="color: red; font-weight: 2px !important;">!preview non ancora disponibile</p>
+                    <iframe src="" frameborder="0" width="100%" height="200px" aria-placeholder="">
+                        Preview non disponibile
+                    </iframe>
+                    <a href="https://braviragazzi.gt.tc" target="_blank">Apri da qui!</a>
+                </div>
+            </section> -->
+
+            <section class="padding partnerships" id="partnerships">
+                <h1 class="light-blue">Partnrships</h1>
+                <div class="partner_card">
+                    <img src="assets/img/logo_bps_black.png" alt="">
+                    <p class="center">Build profit Studios</p>
+                </div>
+            </section>
+            
+            <section class="contattami padding" id="contattami">
+                <h1>Contattami</h1>
+
+                <!-- <h2>Mail <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com</i></a></h2>
+                <h2>Instagram <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h2> -->
+
+
+                <?php
+                    if(isset($_GET['success_contact_mail'])){
+                        $success = $_GET['success_contact_mail'];
+                        if($success == 1){
+                            echo '<p style="color: green; font-weight: bold;">Messaggio inviato con successo!</p>';
+                            echo "<script>alert('Email inviata con successo!');</script>";
+                        } else if($success == 0){
+                            echo '<p style="color: red; font-weight: bold;">Errore durante l\'invio del messaggio. Riprova più tardi.</p>';
+                            echo "<script>alert('Email non inviata!');</script>";
+                        }
+                    }
+                ?>
+                <form action="sendMail.php" method="post" id="form" class="center">
+                    <label for="">Nome: *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required> 
+
+                    <label for="">Email: *</label>
+                    <input type="text" id="email" name="email" placeholder="Inserisci la tua mail" required> 
+
+                    <label for="">Messaggio: </label>
+                    <textarea type="" id="messaggio" name="message" placeholder="Inserisci il tuo messaggio"> </textarea>    
+                    
+                    
+                    <input class="button" type="submit" value="Invia" id="submit" style="cursor: pointer;">
+                </form>
+            </section> 
+
+            <!-- <script type="text/javascript">
+                import emailjs from 'https://cdn.emailjs.com/sdk/3.11/email.min.js';
+                emailjs.init('gs2NywfF3uc76nCPq');
+            </script> -->
+        </main>
+
+        <footer>
+            <div><p>&copy; Priamix Portfolio</p></div>
+            <div><p><a href="">Policy Privacy</a></p></div>
+        </footer>
+    </body>
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/mouse.js"></script>
+    <script src="assets/js/competenze.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/translate.js"></script>
+    <!-- <script src="assets/js/accessibilita.js"></script> -->
+
+    <!-- <script src="assets/js/mail.js"></script> -->
+
+    <!-- 
+    ==============================
+    script per il text animation 
+    ==============================
+    -->
+    <script>
+        text_elements = ["sviluppatore web", "produttore musicale"]
+
+        function typewriter(element, speed = 50, text) {
+            console.log(text)
+            const textC = text;
+            element.innerText = ""; // svuota il testo per riscriverlo
+            let i = 0;
+
+            function write() {
+                if (i < textC.length) {
+                    element.innerText += textC.charAt(i);
+                    i++;
+                    setTimeout(write, speed);
+                }
+            }
+            write();
+        }
+
+        const elements = document.querySelectorAll(".typetext");
+
+        elements.forEach((el, index) => {
+            // bordo valido
+            el.style.borderRight = "3px solid var(--text-light-blue)";
+
+            const text = text_elements[index % text_elements.length];
+
+            // typewriter
+            setTimeout(() => typewriter(el, 50, text), index * 1200);
+
+            // rimuovi il bordo dopo 1 secondo
+            // if (text != text_elements[text_elements.length-1])
+                setTimeout(() => {
+                    el.style.borderRight = "none";
+                }, index * 1500 + text.length * 50 + 500);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+</html>
