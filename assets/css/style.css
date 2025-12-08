@@ -26,6 +26,11 @@
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
+*:disabled {
+    opacity: 60%;
+    scale: .97;
+}
+
 
 #mouse {
     position: absolute;
@@ -73,9 +78,6 @@ section {
 svg {
     position: relative;
 }
-h1 {
-    font-size: 70px;
-}
 li, a {text-decoration: none; color: white;}
 li {
     list-style: none;
@@ -91,7 +93,7 @@ a:hover {
 }
 h1 {
     width: 100%;
-    font-size: 60px;
+    font-size: 50px;
 }
 p {
     line-height: 1.5;
@@ -146,6 +148,27 @@ header {
     header nav li a {
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.468);
     }
+
+.alert {
+    /* border: solid rgb(0, 38, 255) 2px; */
+    background-color: rgb(0, 10, 65);
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 20%;
+    z-index: 9;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+
+    animation: fadeOut 3s;
+
+}
+    .alert.close {
+        left: -100%;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    }
+    
 
 #logo {
     /* border: solid rgb(255, 255, 255) 2px; */
@@ -464,6 +487,9 @@ footer div {
     :root {
         --padding: 10px;
     }
+    main {
+        padding: 0 200px;
+    }
 }
 @media (max-width: 1128px) {    
     header {
@@ -487,6 +513,9 @@ footer div {
                 opacity: 0;
                 transition: opacity 1s cubic-bezier(.215, .61, .355, 1)
             }
+    main {
+        padding: 0 var(--padding);
+    }
 
     .hero {
         justify-content: center;
