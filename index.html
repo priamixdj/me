@@ -22,14 +22,14 @@
     
     <div id="mouse"></div>
     <body>
-        <header>
+        <header class="">
             <!-- <select id="languageSwitcher">
                 <option value="it">Italiano</option>
                 <option value="en">English</option>
             </select> -->
             <img id="logo" src="assets/img/logo.png" alt="logo">
             
-            <nav class="center close" id="menu">
+            <nav class="center close" id="menu" >
                 <li><a href="#">Home</a></li>
                 <li><a href="#competenze" data-i18n="competenze" >Competenze</a></li>
                 <li><a href="#riguardo" data-i18n="riguardo">Riguardo</a></li>
@@ -177,23 +177,11 @@
             <section class="contattami padding" id="contattami">
                 <h1>Contattami</h1>
 
-                <!-- <h2>Mail <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com</i></a></h2>
-                <h2>Instagram <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h2> -->
+                <h2>Mail <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com</i></a></h2>
+                <h2>Instagram <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h2>
 
 
-                <?php
-                    if(isset($_GET['success_contact_mail'])){
-                        $success = $_GET['success_contact_mail'];
-                        if($success == 1){
-                            echo '<p style="color: green; font-weight: bold;">Messaggio inviato con successo!</p>';
-                            echo "<script>alert('Email inviata con successo!');</script>";
-                        } else if($success == 0){
-                            echo '<p style="color: red; font-weight: bold;">Errore durante l\'invio del messaggio. Riprova più tardi.</p>';
-                            echo "<script>alert('Email non inviata!');</script>";
-                        }
-                    }
-                ?>
-                <form action="sendMail.php" method="post" id="form" class="center">
+                <!-- <form action="" id="form" class="center">
                     <label for="">Nome: *</label>
                     <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required> 
 
@@ -201,11 +189,11 @@
                     <input type="text" id="email" name="email" placeholder="Inserisci la tua mail" required> 
 
                     <label for="">Messaggio: </label>
-                    <textarea type="" id="messaggio" name="message" placeholder="Inserisci il tuo messaggio"> </textarea>    
+                    <textarea type="" id="messaggio" name="messaggio" placeholder="Inserisci il tuo messaggio"> </textarea>    
                     
                     
                     <input class="button" type="submit" value="Invia" id="submit" style="cursor: pointer;">
-                </form>
+                </form> -->
             </section> 
 
             <!-- <script type="text/javascript">
