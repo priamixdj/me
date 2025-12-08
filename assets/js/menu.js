@@ -10,6 +10,7 @@ click_menu.forEach(element => {
 
 function toggleMenu() {
     menu.classList.toggle('open');
+    menu.classList.toggle('close');
     hamburgher_menu.classList.toggle('open');
 }
 
